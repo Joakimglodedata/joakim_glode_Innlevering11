@@ -39,7 +39,22 @@ button {
 button:hover {
   transform: scale(1.1);
   /* filter: brightness(150%) hue-rotate(20deg); */
-  background: hsl(from var(--sec-clr) calc(h + 10) s calc(l + 10));
+  background: hsl(from var(--sec-clr) h s calc(l + 10));
+}
+
+
+/* Body */
+#loadingGif {
+  position: fixed;
+  bottom: 40%;
+}
+
+#loadingDisplay {
+  max-width: 80%;
+}
+
+#colour {
+  padding: 5%;
 }
 
 /* Styling classes */
