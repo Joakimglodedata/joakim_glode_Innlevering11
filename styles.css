@@ -5,8 +5,6 @@
   --tert-clr: hsl(from var(--prim-clr) h s calc(l - 10));
   --back-clr: hsl(305, 29%, 9%);
   --body-font: Arial, Helvetica, sans-serif;
-  /* for testing av andre farger og kor synlig dei er */
-  /* filter: hue-rotate(0deg) grayscale(); */
 }
 
 /* Global attributes*/
@@ -15,6 +13,7 @@ body {
   background-color: var(--back-clr);
   color: var(--prim-clr);
   scroll-behavior: smooth;
+  transition: 3s;
 }
 
 h1 {
@@ -28,10 +27,11 @@ h2 {
 p {
   font-size: 0.8em;
   color: var(--tert-clr);
+  transition: 3s;
 }
 
 button {
-  transition: 1s;
+  transition: 3s;
   background: var(--sec-clr);
   color: hsl(from var(--sec-clr) calc(h + 180) s calc(l + 5));
 }
@@ -42,20 +42,6 @@ button:hover {
   background: hsl(from var(--sec-clr) h s calc(l + 10));
 }
 
-
-/* Body */
-#loadingGif {
-  position: fixed;
-  bottom: 40%;
-}
-
-#loadingDisplay {
-  max-width: 80%;
-}
-
-#colour {
-  padding: 5%;
-}
 
 /* Styling classes */
 .secondaryText {
@@ -82,6 +68,22 @@ button:hover {
 .fifthWidth {
   width: 20%;
 }
+  
+
+/* Body */
+#loadingGif {
+  position: fixed;
+  bottom: 40%;
+}
+
+#loadingDisplay {
+  max-width: 80%;
+}
+
+#colour {
+  padding: 5%;
+}
+
 
 /*Footer*/
 footer {
@@ -91,6 +93,7 @@ footer {
   padding: 10px;
   border-radius: 50%;
   background-color: var(--sec-clr);
+  transition: 2s;
 }
 
 footer img {
